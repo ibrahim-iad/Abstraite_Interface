@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstraite_Interface.modele
 {
-    class Rectangle : Figure
+    class Rectangle : IFigure
     {
         private float longueur;
         private float largeur;
@@ -17,12 +17,12 @@ namespace Abstraite_Interface.modele
             this.largeur = lar;
         }
 
-        public override float Surface()
+        public float Surface()
         {
             return this.longueur * this.largeur;
         }
 
-        public override float Perimetre()
+        public float Perimetre()
         {
             return 2 * (this.longueur + this.largeur);
         }

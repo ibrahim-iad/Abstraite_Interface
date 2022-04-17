@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="modele\Cercle.cs" />
     <Compile Include="modele\Figure.cs" />
+    <Compile Include="modele\IFigure.cs" />
     <Compile Include="modele\Rectangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

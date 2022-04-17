@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstraite_Interface.modele
 {
-    class Cercle : Figure
+    class Cercle : IFigure
     {
         private float rayon;
 
@@ -14,12 +14,12 @@ namespace Abstraite_Interface.modele
         {
             this.rayon = rayon;
         }
-        public override float Perimetre()
+        public float Perimetre()
         {
             return 2 * 3.14F * this.rayon;
         }
 
-        public override float Surface()
+        public float Surface()
         {
             return 3.14F * this.rayon * this.rayon;
         }
